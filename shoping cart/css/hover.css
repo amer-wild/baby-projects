@@ -1,0 +1,5 @@
+/*-********-hover-********-*/
+.favorite:hover{
+    scale: 1.1;
+    color: rgb(255, 0, 242);
+}

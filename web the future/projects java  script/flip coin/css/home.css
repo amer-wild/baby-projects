@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    box-sizing: border-box;
+}
+@keyframes flip{
+    from {transform: rotateX(0deg);}
+    to   {transform: rotateX(720deg);}
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content1{
+    width: 50%;
+    height: 100%;
+    background: rgb(69, 105, 237);
+}
+.content2{
+    width: 50%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+}
+.realContent{
+    width: 400px;
+    height: 500px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px black;
+}
+.score{
+    width: 100%;
+    height: 23%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    flex-direction: column;
+    padding: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.coin-container{
+    width: 100%;
+    height: 43%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.coin-container img{
+    scale: 1.6;
+}
+.btns{
+    width: 100%;
+    height: 33%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btns button{
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn1{
+    width: 140px;
+    height: 60px;
+    border-radius: 7px;
+    border: none;
+    background: rgb(73, 73, 255);
+    color: white;
+}
+.btn2{
+    width: 140px;
+    height: 60px;
+    border-radius: 7px;
+    border: none;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(73, 73, 255);
+    color: rgb(0, 0, 0);
+}

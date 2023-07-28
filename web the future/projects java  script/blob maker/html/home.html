@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="/js/home.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="blob-container">
+                <div class="blob-maker">
+
+                </div>
+            </div>
+            <div class="inputs">
+                <div class="input1">
+                    <span class="width-span">width</span>
+                    <input type="number" id="width" class="width" oninput="width_()">
+                </div>
+                <div class="input2">
+                    <span class="height-span">height</span>
+                    <input type="number" id="height" class="height" oninput="height_()">
+                </div>
+            </div>
+            <div class="outputs">
+                <div class="output1">
+                    <input type="range" min="0" max="100" class="range1" value="0" oninput="range_1()">
+                    <input type="range" min="0" max="100" class="range2" value="0" oninput="range_1()">
+                </div>
+                <div class="output2">
+                    <input type="range" min="0" max="100" class="range3" value="0" oninput="range_1()">
+                    <input type="range" min="0" max="100" class="range4" value="0" oninput="range_1()" readonly>
+                </div>
+            </div>
+            <div class="result">
+               <input type="text" class="border-radius" readonly>
+            </div>
+            <div class="btn-container">
+                <button class="btn">copy</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

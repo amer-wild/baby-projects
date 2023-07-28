@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(23, 22, 59);
+}
+.content{
+    width: 500px;
+    height: 300px;
+    background: white;
+    overflow: hidden;
+    border-radius: 0px;
+    background: rgb(35, 33, 71);
+    box-shadow: 1px 1px 10px 0px rgb(77, 72, 124);
+}
+.text{
+    width: 90%;
+    height: 110%;
+    border-radius: 0px;
+    outline: none;
+    padding: 10px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    background: rgb(35, 33, 71);
+    border: none;
+    color: white;
+}
+.character-count {
+    margin: 10px;
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: white;
+}

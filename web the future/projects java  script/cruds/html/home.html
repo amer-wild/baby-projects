@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="/js/home.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <header>
+                <h1>CRUDS</h1>
+                <p>CREATE READ UPDATE DELETE SEARCH</p>
+            </header>
+            <div class="input">
+                <input type="text" class="title" placeholder="title">
+                <input type="number" class="price" placeholder="price" onkeyup="getTotal()">
+                <input type="number" class="taxes" placeholder="taxes" onkeyup="getTotal()">
+                <input type="number" class="ads" placeholder="ads" onkeyup="getTotal()">
+                <input type="number" class="discount" placeholder="discount" onkeyup="getTotal()">
+                <span class="total">total : </span>
+                <div class="output">
+                    <input type="number" class="count" id="count" placeholder="count">
+                    <input type="text" class="category" placeholder="category">
+                    <button class="create">create</button>
+                    <input type="text" class="search" placeholder="search">
+                </div>
+            </div>
+            <div class="searchBy">
+                <button class="search-by-title">search by title</button>
+                <button class="search-by-category">search by category</button>
+            </div>
+            <div class="delete">
+                <button class="deleteAll hidden">delete all ()</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>title</th>
+                        <th>price</th>
+                        <th>taxes</th>
+                        <th>ads</th>
+                        <th>discount</th>
+                        <th>total</th>
+                        <th>category</th>
+                        <th>update</th>
+                        <th>delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

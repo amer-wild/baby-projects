@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: system-ui;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(100deg,rgb(254, 211, 130),rgb(255, 166, 0));
+}
+.content{
+    background: white;
+    width: 40%;
+    height: 50%;
+    border-radius: 18px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: column;
+}
+.score{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding: 20px;
+}
+.elements{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
+}
+.elements i{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(249, 184, 65);
+    padding: 8px;
+    font-size: 60px;
+    font-weight: 100;
+    border-radius: 50%;
+    transition: 0.1s;
+}
+.elements i:hover{
+    scale: 1.1;
+    background: rgb(246, 174, 40);
+    cursor: pointer;
+}
+.choose{
+    margin: 10px;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+}
+.choose h2{
+    font-size: 22px;
+}
+.win-lose{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    position: relative;
+}
+.win-lose span{
+    width: 200px;
+    height: 60px;
+    background: rgb(170, 255, 170);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: green;
+    margin: auto;
+}
+.win-lose div{
+    width: 230px;
+    height: 60px;
+    background: #d5ffd5;
+    border: 1px solid #73f373;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    margin-bottom: 30px;
+}
+.win-lose .agin{
+    position: absolute;
+    top: 13px;
+    left: 83%;
+    width: 100px;
+    background-color: rgb(162, 69, 216);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    margin-bottom: 30px;
+}

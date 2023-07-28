@@ -1,0 +1,126 @@
+/* hovers */
+
+/*//hovers-end */
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    height:100vh;
+    margin: auto;
+}
+.header{
+    background: rgb(255, 255, 255);
+    width: 100%;
+    min-height: 50px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 20%;
+    text-align: center;
+}
+.header ul{
+    padding: 20px;
+    width: 60%;
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.header ul li{
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+.header-icone{
+    text-transform: capitalize;
+    width: 20%;
+    text-align: right;
+    font-size: 30px;
+}
+.header-icone i{
+    padding: 20px;
+}
+.header  li::before{
+    position: absolute;
+    content: '';
+    border-width: 0 3px;
+    border-color: #333;
+    border-style: solid;
+    width: 86%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: scale3d(1,0,1);
+    transition: 0.2s;
+    transform-origin: bottom;
+}
+.header li::after{
+    position: absolute;
+    content: '';
+    border-width: 3px 0 ;
+    border-color: #333;
+    border-style: solid;
+    width: 90%;
+    height: 90%;
+    left: 0;
+    top: 0;
+    right: 0;
+    transform: scale3d(0,1,0);
+    transition: 0.4s;
+    transform-origin: left;
+}
+.header  li:hover::before{
+    transform: scale3d(1,1,1);
+}
+.header  li:hover::after{
+    transition-delay: 0.1s;
+    transform: scale3d(1,1,1);
+}
+.body{
+    width: 70%;
+    height: 100vh;
+    margin: auto;
+    overflow: visible;
+}
+.scroll-img{
+    display: flex;
+    background: red;
+    width: 100%;
+    height: 70%;
+}
+.chair-img{
+    width: 100%;
+    height: 100%;
+}
+.chair-img img{
+    height: 100%;
+    width: 100%;
+}
+.link-items{
+    position: relative;
+}
+.dropdown{
+    padding: 0;
+    display: inline-block;
+    margin: 20px 0 ;
+    border: 2px solid rgb(53, 27, 4);
+    display: table-cell;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    scale: 0;
+    transition: 0.2s;
+    top: 70px;
+}
+.dropdown-menu:hover .dropdown{
+    scale: 1.1;
+}

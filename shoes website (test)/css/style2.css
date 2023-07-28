@@ -1,0 +1,566 @@
+@keyframes change-background{
+    0%{background: #00ccff;}
+    15%{background: #d400ff;}
+    25%{background: #003cff;}
+    50%{background: #7700ff;}
+    75%{background: #ff0077;}
+    100%{background: #ff0037;}
+}
+.animation{
+    animation-name: change-background;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+/* hover-header */
+.section-btn i{
+    transition: 0.5s;
+    text-align: right;
+    margin:0  10px ;
+}
+.section-btn{
+    display: flex;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.icone{
+    cursor: pointer;
+}
+.icone1:hover{
+    color: #c72092;
+}
+.icone2:hover{
+    color: #c72092;
+}
+
+.icone3:hover{
+    color: #c72092;
+}
+/*// hover-header */
+/* header-start */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 60px;
+    overflow: hidden;
+    font-family: sans-serif;
+    box-shadow: 10px 2px 10px rgba(58, 53, 53,0.5);
+    z-index: 100;
+    background: white;
+}
+.logo h1{
+    margin-left: 120px;
+    font-size:40px;
+    color: #c72092;
+}
+.logo span{
+    color: #6c14d0;
+}
+
+.line{
+    float: right;
+    width: 20%;
+    height: 4px;
+    background: #6c14d0;
+}
+header ul{
+    margin-right: 220px;
+    text-align: center;
+    display: flex;
+    list-style: none;
+    text-transform: capitalize;
+}
+header ul li{
+    margin: 20px 15px;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+a:hover{
+    color: #c72092;
+}
+.icone{
+    margin-right: 220px;
+}
+.icone i{
+    padding: 3px;
+}
+/* header-end */
+
+
+/* body-1-start */
+.section-body{
+    background-image: url(../image/bg1.png);
+    width: 100%;
+    height: 100vh;
+}
+.title{
+    text-align: left;
+    height: 100vh;
+    width: 50%;
+    float: left;
+    margin-top: 250px;
+    margin-bottom: 200px;
+}
+.section-title span{
+    text-transform: uppercase;
+    font-size: 90px;
+    color: #c72092;
+}
+.p{
+    margin: 0 200px;
+    padding: 50px 0 ;
+}
+.section-title{
+    margin: 0 200px;
+    font-size: 90px;
+    color: #c72092;
+    text-transform: lowercase;
+}
+.section-btn{
+    margin: 0 130px;
+    background: linear-gradient(to right,#00ccff,rgb(190, 20, 162));
+    width: 190px;
+    height: 44px;
+    border-radius: 18px;
+    color: white;
+    border: none;
+    animation-name:change-background;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    font-size: 26px;
+}
+.section-btn:hover .sc-icone{
+    transform: translate(20px);
+}
+.section-img{
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+.section-img img{
+    margin: 30px 0 ;
+}
+/* body-1-end */
+
+/* body-cards-start */
+.products{
+    height: 190vh;
+    width: 100%;
+}
+.products h1{
+    font-size: 70px;
+    text-transform: uppercase;
+    width: 100%;
+    color: #6c14d0;
+}
+.header{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.product-cards{
+    display: block;
+    min-height: 1100px;
+    width: 99%;
+    margin: auto;
+    margin-top: 60px;
+}
+.product-card{
+    border-radius: 5px;
+    border: #b4b4b4 2px solid;
+    box-shadow: 1px 2px 7px 1px rgb(118, 37, 156);
+    background: white;
+    width: 320px;
+    height: 500px;
+    overflow: hidden;
+    float: left;
+    margin: 20px 0;
+    margin-left: 80px;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   min-width: 100%;
+   min-height: 15%;
+}
+.img img{
+    display: inline;
+    width: 150px;
+    height: 150px;
+    padding: 10px 0 ;
+    transition: 0.4s;
+}
+.name{
+    width: 100%;
+    height: 10%;
+}
+.name h2{
+    font-size: 35px;
+    text-align: center;
+    color: black;
+}
+.description{
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+    text-align: center;
+}
+.price{
+    padding-top: 20px ;
+    font-size: 30px;
+    text-align: center;
+    height: 15%;
+}
+.eve{
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    color: rgb(255, 174, 0);
+    font-size: 20px;
+}
+.btn{
+    width: 100%;
+    height: 100%;
+}
+.product-btn{
+    background: linear-gradient(to right,rgb(82, 5, 112),rgb(229, 24, 248),rgb(225, 1, 255));
+    color: white;
+    width: 170px;
+    height: 40px ;
+    border-radius: 1px;
+    border: none;
+    margin: 20px 80px;
+    transition: 0.2s;
+}
+/* body-cards-end */
+/* card-hover */
+.product-card:hover .img img{
+    scale: 1.2;
+}
+.product-btn:hover{
+    background-color: #1c79af;
+    scale: 1.1;
+    box-shadow: 1px 1px 10px 1px rgb(150, 17, 177);
+}
+/* card-hover-end */
+/* about-start */
+.about-title{
+    width: 100%;
+    height: 90px;
+    color: black;
+    font-size: 60px;
+    padding: 100px 0 ;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.about-title span{
+    color: #7d07dd;
+}
+.about{
+    margin: auto;
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.aboutus{
+    color: #7d07dd;
+    box-shadow:  1px 1px 20px rgb(201, 39, 193);
+    border-radius: 7px;
+    padding: 30px;
+    width: 600px;
+    margin-right: 80px;
+    border: #c72092 solid 3px;
+}
+.photo{
+    margin: auto;
+    text-align: center;
+    width: 15%;
+}
+.photo img{
+    background: linear-gradient( to right,rgb(108, 35, 192),#c01ce9);
+    display: inline;
+    width: 140px;
+    height: 100px;
+    opacity: 0.6;
+    border-radius: 4px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.photo img:hover{
+    opacity: 1;
+}
+.picture{
+    box-shadow:  1px 1px 20px rgb(49, 21, 175);
+    padding: 0;
+    border: #511ec9 3px solid;
+    width: 600px;
+    border-radius: 9px;
+    margin: auto;
+}
+.picture img{
+    transition: 0.3s;
+    width: 90%;
+    height: 90%;
+}
+.shop-now{
+    transition: 0.6s;
+    cursor: pointer;
+    text-transform: capitalize;
+    box-shadow:  1px 1px 20px rgb(201, 39, 193);
+    margin: auto;
+    width: 130px;
+    height: 40px;
+    background: white;
+    border: #c72092 2px solid;
+    margin-top: 400px ;
+}
+.shop-now:hover{
+    background: #cc00ff;
+    color: white;
+}
+/* bout-end */
+/* comment-start */
+.review-title{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.review-title span{
+    color: #c01ce9;
+}
+.comments{
+    min-height: 700px;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+.coment-card{
+    float: left;
+    margin: 25px ;
+    background: rgba(216, 206, 206, 0.267);
+    box-shadow: 1px 1px 9px 4px gray;
+    width: 520px;
+    height: 300px;
+}
+.user{
+    margin-top: 30px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+.stars {
+    font-size: 17px;
+    color: rgb(255, 153, 0);
+    margin-bottom: 50px;
+    margin-left: 140px;
+    text-align: left;
+    display: block;
+}
+.comments img{
+    transition: 0.2s;
+    display: inline-block;
+    margin: 30px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    box-shadow:  1px 1px 7px 3px rgb(105, 99, 99);
+}
+.card-description{
+    margin: auto;
+    width: 99%;
+    font-size: 25px;
+}
+/* comeent-end */
+/* comment-hover-start */
+.user img:hover{
+    scale: 1.2;
+}
+/* comment-hover-end */
+.services{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.services .header-title{
+    padding-top: 40px ;
+    height: 130px;
+    margin: auto;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.services span{
+    color: #c01ce9;
+}
+.s-icone{
+    color: rgb(255, 218, 8);
+    padding: 20px 0 ;
+}
+.services-services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services-services p{
+    margin: 20px 0 ;
+    font-size: 30px;
+}
+.sv{
+    font-size: 15px;
+    color: gray;
+}
+.services-content{
+    margin: 0 30px;
+}
+/* //services-end */
+/* welcome-page-start */
+.welcome{
+    height: 100vh;
+    background-image: url(../image/loging_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.image img{
+    scale: 0.6;
+}
+.login{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.login-content{
+    width: 300px;
+    height: 500px;
+    margin: auto;
+    margin-top: 340px ;
+    display: block;
+    padding: 10px 0 ;
+}
+.welcome-back{
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.welcome label{
+    font-size: 23px;
+    text-transform: capitalize;
+}
+.login-content input{
+    color: black;
+    width: 100%;
+    height: 38px;
+    border: #7d07dd 2px solid;
+    background: none;
+}
+.password{
+    background: none;
+}
+.login-btn{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    margin: 20px 15%;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+    background: linear-gradient(to right,rgb(255, 18, 176),rgb(162, 0, 255));
+
+}
+.login-link{
+    display: block;
+    text-align: right;
+    font-size: 24px;
+}
+.password:focus{
+    background: none;  
+}
+.imgs{
+    display: flex;
+    justify-content: center;
+
+}
+.imgs img{
+    background: white;
+    border-radius: 100%;
+    width: 34px;
+}
+/* welcome-page-end */
+.foot{
+    height: 20vh;
+    background: rgb(224, 224, 224);
+    display: flex;
+}
+.foot-content{
+    width: 24%;
+    margin-left: 1%;
+    color: black;
+    text-align: center;
+}
+.end-header{
+    font-family: sans-serif;
+    color: hwb(273 31% 1%);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 26px;
+    text-align: left;
+    margin: 0 70px ;
+}
+.contact{
+    text-align: left;
+    display: inline-block;
+}
+.end-icone{
+    transition: 0.2s;
+    margin: 10px;
+    padding: 10px;
+    background: white;
+    border-radius: 20px;
+}
+.end-icone:hover{
+    background: #7d07dd;
+    color: whitesmoke;
+    box-shadow: 1px 1px 10px 3px rgb(167, 65, 192);
+}
+.foot-content input{
+    padding: 6px;
+    border-radius: 10px;
+    display: block;
+    margin: 10px 0 ;
+    border: none;
+}
+.foot-content button{
+    background: linear-gradient(to right, rgb(255, 8, 255),rgb(119, 0, 167));
+    color: white;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    padding: 7px;
+    width: 100px;
+}

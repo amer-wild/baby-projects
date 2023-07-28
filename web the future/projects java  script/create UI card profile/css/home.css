@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: 0.2s;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.content{
+    width: 428px;
+    height: 600px;
+    background: rgb(249, 245, 245);
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 1px 1px 20px 0px #727171;;
+    margin-bottom: 40px;
+
+}
+.content header{
+    width: 100%;
+    height: 20%;
+    border-radius: 20px 20px 0 0 ;
+    background: #35c460;
+    margin-bottom: 10px;
+}
+.img{
+    width: 139px;
+    height: 122px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 31px;
+    left: 137px;
+}
+.img img{
+    width: 117px;
+    height: 106px;
+    border-radius: 50%;
+}
+.body{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 13px;
+}
+.info h2{
+    color: #35c460;
+    font-size: 19px;
+}
+.info p{
+    font-size: 19px;
+    color: rgb(130, 127, 127);
+    letter-spacing: 1.5px;
+}
+.follow-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+.follow-section span{
+    color: black;
+    font-size: 23px;
+    font-weight: 600;
+    color: #35c460;
+}
+.follow-section h2{
+    font-size: 29px;
+    padding: 10px;
+    font-weight: 100;
+}
+.button-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 70px;
+}
+.button-section button{
+    width: 40%;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background: rgba(141, 83, 192, 0.892);
+    color: white;
+    cursor: pointer;
+}
+.button-section .message{
+    background: white;
+    color: black;
+    border: 2.5px solid rgb(174, 88, 228);
+}
+.color-change{
+    width: 428px;
+    height: 50px;
+    background: white;
+    box-shadow: 1px 1px 10px 1px rgb(147, 145, 145);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+.color-change div{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    
+}
+.color-change div:hover{
+    scale: 1.3;
+}
+.blue{
+    background: #259ae3;
+    box-shadow: 1px 1px 10px 1px #259ae3;
+}
+.red{
+    background: #e32548;
+    box-shadow: 1px 1px 10px 1px #e32548;
+}
+.green{
+    background: #35c460;
+    box-shadow: 1px 1px 10px 1px #35c460;
+}
+.purple{
+    background: #b93dfc;
+    box-shadow: 1px 1px 10px 1px #9b48ea;
+}
+.orange{
+    background: #ff8000;
+    box-shadow: 1px 1px 10px 1px #ff8000;
+}
